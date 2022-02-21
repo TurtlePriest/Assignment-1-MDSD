@@ -1,19 +1,30 @@
 package main.metamodel;
 
 public class Transition {
+	
+	private String event;
+	private State to;
+	public Transition(String event, State to) {
+		super();
+		this.event = event;
+		this.to = to;
+	}
 
 	public Object getEvent() {
 		// TODO Auto-generated method stub
-		return null;
+		return event;
 	}
 
+	
 	public State getTarget() {
 		// TODO Auto-generated method stub
-		return null;
+		return to;
 	}
 
 	public boolean hasSetOperation() {
 		// TODO Auto-generated method stub
+		
+		
 		return false;
 	}
 
